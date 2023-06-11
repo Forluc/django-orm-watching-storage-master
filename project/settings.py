@@ -5,12 +5,12 @@ env = Env()
 env.read_env()
 
 # DATABASE DATA
-db_engine = os.environ['DB_ENGINE']
-db_host = os.environ['DB_HOST']
-db_port = os.environ['DB_PORT']
-db_name = os.environ['DB_NAME']
-db_user = os.environ['DB_USER']
-db_password = os.environ['DB_PASSWORD']
+db_engine = os.getenv('DB_ENGINE')
+db_host = os.getenv('DB_HOST')
+db_port = os.getenv('DB_PORT')
+db_name = os.getenv('DB_NAME')
+db_user = os.getenv('DB_USER')
+db_password = os.getenv('DB_PASSWORD')
 
 DATABASES = {
     'default': {
